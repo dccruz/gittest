@@ -1,4 +1,4 @@
-#!/bin/sh
+
 
 while read date
 do
@@ -16,3 +16,4 @@ do
     git add "$fileName"
     git commit --date="$commitDate" --author="$name <$email>" -m "$fileName"
 done < dates.txt
+#!/bin/sh
